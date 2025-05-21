@@ -1,0 +1,11 @@
+C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\bin\Debug\net8.0\Models.deps.json
+C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\bin\Debug\net8.0\Models.dll
+C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\bin\Debug\net8.0\Models.pdb
+C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\net8.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\net8.0\Models.AssemblyInfoInputs.cache
+C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\net8.0\Models.AssemblyInfo.cs
+C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\net8.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\net8.0\Models.dll
+C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\net8.0\refint\Models.dll
+C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\net8.0\Models.pdb
+C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\net8.0\ref\Models.dll

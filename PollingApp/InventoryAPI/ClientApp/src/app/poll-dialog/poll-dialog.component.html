@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>{{ poll.question }}</h2>
+<mat-dialog-content>
+  <mat-radio-group [(ngModel)]="selectedOptionId">
+    <mat-radio-button
+      *ngFor="let option of poll.options"
+      [value]="option.id"
+      class="d-block"
+    >
+      {{ option.text}} ({{ option.voteCount }} votes)
+    </mat-radio-button>
+  </mat-radio-group>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="dialogRef.close()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="castVote()">Vote</button>
+</mat-dialog-actions>

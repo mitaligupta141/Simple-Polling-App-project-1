@@ -1,0 +1,39 @@
+<nav style="width:100vw" class="bg-white shadow-md px-6 py-3 flex items-center justify-between w-full">
+  
+  <div class="text-2xl font-extrabold text-gray-800">
+    DirectPoll
+  </div>
+
+  
+  <div class="md:hidden">
+    <button (click)="menuOpen = !menuOpen" class="text-2xl text-gray-700 focus:outline-none">
+      ☰
+    </button>
+  </div>
+
+
+  <div  class="hidden  md:flex gap-6  items-center">
+    <a  routerLink="/"  style="margin-right: 100px;" class="font-semibold text-gray-700 hover:text-blue-600 transition">Home</a>
+    <a routerLink="/dashboard" style="margin-right: 100px;" class="font-semibold text-gray-700 hover:text-blue-600 transition">Give Vote</a>
+    
+    <a routerLink="/showvote" style="margin-right: 100px;" class="font-semibold text-gray-700 hover:text-blue-600 transition">Show Your Votes</a>
+    <a routerLink="/createpoll" style="margin-right: 100px;" class="font-semibold text-gray-700 hover:text-blue-600 transition">Create Your Poll</a>
+    <a routerLink="/poll-results/:id" style="margin-right: 100px;" class="font-semibold text-gray-700 hover:text-blue-600 transition">Vote Percent</a>
+ <div style="display: flex;">
+   <a   *ngIf="!loggedIn" routerLink="/registerlogin" class="font-semibold text-gray-700 hover:text-blue-600 transition">Register/Login</a>
+    <a    *ngIf="loggedIn" routerLink="/logout" class="font-semibold text-gray-700 hover:text-red-600 transition">Logout</a>
+ </div>
+  </div>
+    
+</nav>
+
+<!-- Mobile Menu -->
+<div *ngIf="menuOpen" class="md:hidden px-6 pb-4 bg-white shadow-sm space-y-2">
+  <a routerLink="/" class="block font-semibold text-gray-700 hover:text-blue-600 transition">Home</a>
+  <a routerLink="/dashboard" class="block font-semibold text-gray-700 hover:text-blue-600 transition">Give Vote</a>
+  <a routerLink="/showvote" class="block font-semibold text-gray-700 hover:text-blue-600 transition">Show Your Votes</a>
+  <a routerLink="/createpoll" class="block font-semibold text-gray-700 hover:text-blue-600 transition">Create Your Poll</a>
+  <a routerLink="/poll-results/:id" class="block font-semibold text-gray-700 hover:text-blue-600 transition">Vote Percent</a>
+  <a *ngIf="!loggedIn" routerLink="/registerlogin" class="block font-semibold text-gray-700 hover:text-blue-600 transition">Register/Login</a>
+  <a *ngIf="loggedIn" routerLink="/logout" class="block font-semibold text-gray-700 hover:text-red-600 transition">Logout</a>
+</div>

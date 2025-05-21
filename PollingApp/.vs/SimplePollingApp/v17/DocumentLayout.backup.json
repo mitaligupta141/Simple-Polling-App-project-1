@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53C6086B-2680-49AF-95AB-CC489B15FBFD}|Services\\Services.csproj|c:\\users\\mitaligupta\\desktop\\fusion stack training\\pollingapp\\services\\concrete\\pollservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53C6086B-2680-49AF-95AB-CC489B15FBFD}|Services\\Services.csproj|solutionrelative:services\\concrete\\pollservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC329FB-7431-4077-95EC-FB9EB716E54D}|Data\\Data.csproj|c:\\users\\mitaligupta\\desktop\\fusion stack training\\pollingapp\\data\\contract\\ipollrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DC329FB-7431-4077-95EC-FB9EB716E54D}|Data\\Data.csproj|solutionrelative:data\\contract\\ipollrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC329FB-7431-4077-95EC-FB9EB716E54D}|Data\\Data.csproj|c:\\users\\mitaligupta\\desktop\\fusion stack training\\pollingapp\\data\\concrete\\pollrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DC329FB-7431-4077-95EC-FB9EB716E54D}|Data\\Data.csproj|solutionrelative:data\\concrete\\pollrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC329FB-7431-4077-95EC-FB9EB716E54D}|Data\\Data.csproj|c:\\users\\mitaligupta\\desktop\\fusion stack training\\pollingapp\\data\\vote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DC329FB-7431-4077-95EC-FB9EB716E54D}|Data\\Data.csproj|solutionrelative:data\\vote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC329FB-7431-4077-95EC-FB9EB716E54D}|Data\\Data.csproj|c:\\users\\mitaligupta\\desktop\\fusion stack training\\pollingapp\\data\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DC329FB-7431-4077-95EC-FB9EB716E54D}|Data\\Data.csproj|solutionrelative:data\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC329FB-7431-4077-95EC-FB9EB716E54D}|Data\\Data.csproj|c:\\users\\mitaligupta\\desktop\\fusion stack training\\pollingapp\\data\\poll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DC329FB-7431-4077-95EC-FB9EB716E54D}|Data\\Data.csproj|solutionrelative:data\\poll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89DDE636-28C5-45D3-B592-4D8F059A616E}|InventoryAPI\\pollingAPI.csproj|c:\\users\\mitaligupta\\desktop\\fusion stack training\\pollingapp\\inventoryapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89DDE636-28C5-45D3-B592-4D8F059A616E}|InventoryAPI\\pollingAPI.csproj|solutionrelative:inventoryapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IPollRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Contract\\IPollRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Contract\\IPollRepository.cs",
+              "ToolTip": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Contract\\IPollRepository.cs",
+              "RelativeToolTip": "Data\\Contract\\IPollRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T06:41:33.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PollService.cs",
+              "DocumentMoniker": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Services\\Concrete\\PollService.cs",
+              "RelativeDocumentMoniker": "Services\\Concrete\\PollService.cs",
+              "ToolTip": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Services\\Concrete\\PollService.cs",
+              "RelativeToolTip": "Services\\Concrete\\PollService.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwFcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T06:37:11.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PollRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Concrete\\PollRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Concrete\\PollRepository.cs",
+              "ToolTip": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Concrete\\PollRepository.cs",
+              "RelativeToolTip": "Data\\Concrete\\PollRepository.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T06:35:02.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vote.cs",
+              "DocumentMoniker": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Vote.cs",
+              "RelativeDocumentMoniker": "Data\\Vote.cs",
+              "ToolTip": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Vote.cs",
+              "RelativeToolTip": "Data\\Vote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T05:21:03.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Option.cs",
+              "DocumentMoniker": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Option.cs",
+              "RelativeDocumentMoniker": "Data\\Option.cs",
+              "ToolTip": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Option.cs",
+              "RelativeToolTip": "Data\\Option.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T05:20:47.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Poll.cs",
+              "DocumentMoniker": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Poll.cs",
+              "RelativeDocumentMoniker": "Data\\Poll.cs",
+              "ToolTip": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Poll.cs",
+              "RelativeToolTip": "Data\\Poll.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T05:20:34.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\InventoryAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "InventoryAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\InventoryAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "InventoryAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvzoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T16:23:21.692Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

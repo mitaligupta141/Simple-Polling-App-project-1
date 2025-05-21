@@ -1,0 +1,12 @@
+@media (max-width: 576px) {
+  /* Styles for screens smaller than 768px */
+ .container{
+    display: none;
+ }
+
+ .buttons{
+    margin-right: 70px;
+ }
+
+
+}
