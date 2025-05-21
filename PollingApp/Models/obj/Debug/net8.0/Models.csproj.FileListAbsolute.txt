@@ -9,3 +9,15 @@ C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\n
 C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\net8.0\refint\Models.dll
 C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\net8.0\Models.pdb
 C:\Users\MitaliGupta\Desktop\Fusion stack Training\PollingApp\Models\obj\Debug\net8.0\ref\Models.dll
+C:\Simple Polling App\PollingApp\Models\bin\Debug\net8.0\Models.deps.json
+C:\Simple Polling App\PollingApp\Models\bin\Debug\net8.0\Models.dll
+C:\Simple Polling App\PollingApp\Models\bin\Debug\net8.0\Models.pdb
+C:\Simple Polling App\PollingApp\Models\obj\Debug\net8.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Simple Polling App\PollingApp\Models\obj\Debug\net8.0\Models.AssemblyInfoInputs.cache
+C:\Simple Polling App\PollingApp\Models\obj\Debug\net8.0\Models.AssemblyInfo.cs
+C:\Simple Polling App\PollingApp\Models\obj\Debug\net8.0\Models.csproj.CoreCompileInputs.cache
+C:\Simple Polling App\PollingApp\Models\obj\Debug\net8.0\Models.sourcelink.json
+C:\Simple Polling App\PollingApp\Models\obj\Debug\net8.0\Models.dll
+C:\Simple Polling App\PollingApp\Models\obj\Debug\net8.0\refint\Models.dll
+C:\Simple Polling App\PollingApp\Models\obj\Debug\net8.0\Models.pdb
+C:\Simple Polling App\PollingApp\Models\obj\Debug\net8.0\ref\Models.dll

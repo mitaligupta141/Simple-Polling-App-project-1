@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Models\\Models.csproj",
+      "projectUniqueName": "C:\\Simple Polling App\\PollingApp\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Models\\Models.csproj",
+      "projectPath": "C:\\Simple Polling App\\PollingApp\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\MitaliGupta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Models\\obj\\",
+      "outputPath": "C:\\Simple Polling App\\PollingApp\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

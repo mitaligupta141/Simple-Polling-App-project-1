@@ -5208,11 +5208,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\InventoryAPI\\pollingAPI.csproj",
+      "projectUniqueName": "C:\\Simple Polling App\\PollingApp\\InventoryAPI\\pollingAPI.csproj",
       "projectName": "pollingAPI",
-      "projectPath": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\InventoryAPI\\pollingAPI.csproj",
+      "projectPath": "C:\\Simple Polling App\\PollingApp\\InventoryAPI\\pollingAPI.csproj",
       "packagesPath": "C:\\Users\\MitaliGupta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\InventoryAPI\\obj\\",
+      "outputPath": "C:\\Simple Polling App\\PollingApp\\InventoryAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5233,14 +5233,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Data.csproj"
+            "C:\\Simple Polling App\\PollingApp\\Data\\Data.csproj": {
+              "projectPath": "C:\\Simple Polling App\\PollingApp\\Data\\Data.csproj"
             },
-            "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Models\\Models.csproj"
+            "C:\\Simple Polling App\\PollingApp\\Models\\Models.csproj": {
+              "projectPath": "C:\\Simple Polling App\\PollingApp\\Models\\Models.csproj"
             },
-            "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Services\\Services.csproj"
+            "C:\\Simple Polling App\\PollingApp\\Services\\Services.csproj": {
+              "projectPath": "C:\\Simple Polling App\\PollingApp\\Services\\Services.csproj"
             }
           }
         }

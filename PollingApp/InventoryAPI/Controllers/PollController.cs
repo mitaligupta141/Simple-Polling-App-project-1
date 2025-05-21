@@ -8,6 +8,7 @@ using Services.Contract;
 
 namespace InventoryAPI.Controllers
 {
+    using AutoMapper;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
@@ -25,12 +26,18 @@ namespace InventoryAPI.Controllers
         public class PollController : ControllerBase
         {
             private readonly UserManager<ApplicationUser> _userManager;
+            private readonly ApplicationDbContext _context;
             private readonly IPollService _pollService;
+            
+            private readonly IMapper _mapper;
 
-            public PollController(IPollService pollService, UserManager<ApplicationUser> userManager)
+            public PollController(IPollService pollService, UserManager<ApplicationUser> userManager, IMapper mapper, ApplicationDbContext context)
             {
                 _pollService = pollService;
                 _userManager = userManager;
+                _mapper = mapper;
+             
+                _context = context;
             }
 
             [HttpPost("create")]
@@ -88,6 +95,104 @@ namespace InventoryAPI.Controllers
                 return StatusCode(result.StatusCode, result);
             }
 
+
+            [AllowAnonymous]
+            [HttpGet("FilterByDate")]
+            public async Task<IActionResult> FilterPollsByDate([FromQuery] DateTime? fromDate, [FromQuery] DateTime? toDate)
+            {
+                if (!fromDate.HasValue || !toDate.HasValue)
+                {
+                    return BadRequest(new
+                    {
+                        Message = "Both fromDate and toDate query parameters are required in 'yyyy-MM-dd' format."
+                    });
+                }
+
+                if (fromDate > toDate)
+                {
+                    return BadRequest(new
+                    {
+                        Message = "fromDate cannot be later than toDate."
+                    });
+                }
+
+                // Normalize time: start of day to end of day
+                var startDate = fromDate.Value.Date;
+                var endDate = toDate.Value.Date.AddDays(1).AddTicks(-1); // 23:59:59.9999999
+
+                var polls = await _context.Polls
+                    .Include(p => p.Options)
+                    .Where(p => p.CreatedAt >= startDate && p.CreatedAt <= endDate)
+                    .OrderByDescending(p => p.CreatedAt)
+                    .ToListAsync();
+
+                var pollDtos = _mapper.Map<List<PollResponseDto>>(polls);
+
+                return Ok(new
+                {
+                    StatusCode = 200,
+                    Message = $"Polls filtered from {startDate:yyyy-MM-dd} to {endDate:yyyy-MM-dd}",
+                    Data = pollDtos
+                });
+            }
+
+
+            [AllowAnonymous]
+            [HttpGet("FilterByDate1")]
+            public async Task<IActionResult> FilterPollsByDate(
+    [FromQuery] DateTime? fromDate,
+    [FromQuery] DateTime? toDate,
+    [FromQuery] bool? expired) // New param
+            {
+                if (!fromDate.HasValue || !toDate.HasValue)
+                {
+                    return BadRequest(new
+                    {
+                        Message = "Both fromDate and toDate query parameters are required in 'yyyy-MM-dd' format."
+                    });
+                }
+
+                if (fromDate > toDate)
+                {
+                    return BadRequest(new
+                    {
+                        Message = "fromDate cannot be later than toDate."
+                    });
+                }
+
+                var now = DateTime.UtcNow;
+
+                var pollsQuery = _context.Polls
+                    .Include(p => p.Options)
+                    .Where(p => p.CreatedAt >= fromDate.Value && p.CreatedAt <= toDate.Value);
+
+                if (expired.HasValue)
+                {
+                    if (expired.Value)
+                    {
+                        // Get expired polls: CreatedAt + 7 days <= now
+                        pollsQuery = pollsQuery.Where(p => p.CreatedAt.AddDays(7) <= now);
+                    }
+                    else
+                    {
+                        // Get not expired polls: CreatedAt + 7 days > now
+                        pollsQuery = pollsQuery.Where(p => p.CreatedAt.AddDays(7) > now);
+                    }
+                }
+
+                var polls = await pollsQuery
+                    .OrderByDescending(p => p.CreatedAt)
+                    .ToListAsync();
+
+                var pollDtos = _mapper.Map<List<PollResponseDto>>(polls);
+
+                return Ok(new
+                {
+                    StatusCode = 200,
+                    Message = "Polls filtered by date range and expiration.",
+                    Data = pollDtos
+                });
+            }
 
 
         }

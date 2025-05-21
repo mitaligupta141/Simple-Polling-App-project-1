@@ -53,9 +53,23 @@ import { MatMenuModule } from '@angular/material/menu';
 
 
 
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+export function playerFactory() {
+  return player;
+}
+
+
+
+
+
 
 @NgModule({
   declarations: [
+
+
     AppComponent,
     PollDialogComponent,
     RegisterloginComponent, 
@@ -74,10 +88,10 @@ import { MatMenuModule } from '@angular/material/menu';
   
   ],
   imports: [
-    
+   LottieModule.forRoot({ player: playerFactory }) ,// 👈 Add this  
      BrowserAnimationsModule,
     BrowserModule,
-    
+    NgbModule,
     AppRoutingModule,
     FormsModule,
     AppRoutingModule, 
@@ -105,7 +119,8 @@ import { MatMenuModule } from '@angular/material/menu';
  MatListModule,
   HighchartsChartModule,
   MatSortModule,
-  MatMenuModule
+  MatMenuModule,
+  NgbModule
 
 
   ],

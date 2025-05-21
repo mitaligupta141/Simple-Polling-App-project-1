@@ -16,6 +16,9 @@
             "outputPath": "dist/frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "allowedCommonJsDependencies": [
+    "lottie-web"
+  ],
             "polyfills": [
               "zone.js"
             ],
@@ -25,10 +28,11 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/slick-carousel/slick/slick.css",
-  "node_modules/slick-carousel/slick/slick-theme.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css",
+              "node_modules/swiper/swiper-bundle.min.css",
               "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []

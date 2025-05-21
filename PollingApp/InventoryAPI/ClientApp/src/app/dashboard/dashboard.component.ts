@@ -71,6 +71,14 @@ export class DashboardComponent implements OnInit {
   sortField: string = 'createdAt';
   sortDirection: string = 'asc';
 
+   filterOptions = [
+    { value: '', label: 'All Polls' },
+    { value: 'active', label: 'Active Polls' },
+    { value: 'expired', label: 'Expired Polls' },
+    { value: 'popular', label: 'Popular Polls' }
+  ];
+  filterValue: string = '';
+
   constructor(private http: HttpClient, private dialog: MatDialog) {}
 
   ngOnInit(): void {
@@ -153,8 +161,78 @@ export class DashboardComponent implements OnInit {
       }
     });
   }
+    filterPolls(): void {
+    if (!this.filterValue) {
+      this.loadPolls();
+      return;
+    }
+  
+    this.http.get<PollApiResponse>(`https://localhost:7022/api/Poll/GetPollByFilter?filter=${this.filterValue}`)
+      .subscribe({
+        next: res => this.polls = res.success ? res.data : [],
+        error: err => {
+          console.error('Filter failed:', err);
+          this.polls = [];
+        }
+      });
+
+    }
+      dateFilterOptions = [
+  { label: 'All Polls', value: '' },
+  { label: 'Today', value: 'today' },
+  { label: 'Yesterday', value: 'yesterday' },
+  { label: 'Last 7 Days', value: 'last7days' }
+];
+
+selectedDateFilter = '';
+
+filterByDateRange(): void {
+  if (!this.selectedDateFilter) {
+    this.loadPolls(); // Load all if no filter
+    return;
+  }
+
+  const today = new Date();
+  let fromDate: string;
+  let toDate: string;
+
+  switch (this.selectedDateFilter) {
+    case 'today':
+      fromDate = toDate = this.formatDate(today);
+      break;
+    case 'yesterday':
+      const yesterday = new Date(today);
+      yesterday.setDate(yesterday.getDate() - 1);
+      fromDate = toDate = this.formatDate(yesterday);
+      break;
+    case 'last7days':
+      const sevenDaysAgo = new Date(today);
+      sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 6);
+      fromDate = this.formatDate(sevenDaysAgo);
+      toDate = this.formatDate(today);
+      break;
+    default:
+      return;
+  }
+
+  const url = `https://localhost:7022/api/Poll/FilterByDate?fromDate=${fromDate}&toDate=${toDate}`;
+  this.http.get<PollApiResponse>(url).subscribe({
+    next: res => {
+      if (res.statusCode === 200) {
+        this.polls = res.data;
+      }
+    },
+    error: err => {
+      console.error('Date filter failed:', err);
+    }
+  });
 }
 
+private formatDate(date: Date): string {
+  return date.toISOString().split('T')[0]; // yyyy-MM-dd
+}
+  }
+  
 
   
 

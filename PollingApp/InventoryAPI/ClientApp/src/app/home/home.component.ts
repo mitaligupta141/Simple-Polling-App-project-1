@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
   selector: 'app-home',
@@ -34,5 +35,18 @@ trigger('toggleFade', [
   ],
 })
 export class HomeComponent {
+
+   images = [
+    'https://prod.smassets.net/assets/content/sm/SEO-online-polls-hero-557x400.webp" alt="User',
+    'https://prod.smassets.net/assets/content/sm/SEO-online-polls-hero-557x400.webp" alt="User',
+    'https://prod.smassets.net/assets/content/sm/SEO-online-polls-hero-557x400.webp" alt="User',
+  ]; 
+
+   lottieOptions: AnimationOptions = {
+      path: 'assets/vote.json', // ✅ Correct path inside /src/assets/
+      loop: true,
+      autoplay: true
+    };
+      
 
 }

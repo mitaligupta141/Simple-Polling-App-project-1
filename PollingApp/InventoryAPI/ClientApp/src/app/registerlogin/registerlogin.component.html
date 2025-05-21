@@ -1,15 +1,21 @@
-<div @slideFadeIn class="min-h-screen flex ">
+<div  @slideFadeIn class="min-h-screen flex ">
     <!-- Left side -->
-    <div [@slideFadeIn] class="w-1/2 bg-green-800 text-white flex flex-col justify-center items-start px-16 container">
-        <img [src]="'assets/person.png'" style="margin-left: 140px; height: 25%; width: 40%;" class="ml-12 mb-10" >
-      <h1 style="margin-left: 70px;" class="text-4xl font-bold mb-4">
+    <div [@slideFadeIn] class="w-1/2 bg-green-800 text-white flex flex-col justify-center items-start px-16 container "
+    >
+       <ng-lottie
+  [options]="lottieOptions"
+  style="margin-left: 20px; height: 300px; width: 400px;"
+ 
+></ng-lottie>
+        <!-- <img [src]="'assets/person.png'" style="margin-left: 140px; height: 25%; width: 40%;" class="ml-12 mb-10" > -->
+      <h1 style="margin-left: 70px;" class="text-4xl font-bold mb-10">
         Hey! This is Your Polling App
       </h1>
-      <p style="margin-left: 70px;"  class="mb-3 text-white-800">app for your personal choices.</p>
+      <p style="margin-left: 70px;"  class="mb-3 text-white-800">a simple yet powerful platform where your voice drives the conversation, your choices create impact, and your opinion truly matters.</p>
     
     </div>
   
- 
+
 
     <div class="w-full md:w-1/2 bg-white flex justify-center items-center px-6 md:px-12 py-8">
   <div class="w-full max-w-md">

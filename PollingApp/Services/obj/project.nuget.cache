@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1brU9esDk1M=",
+  "dgSpecHash": "DMPrDHWkfnU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Services\\Services.csproj",
+  "projectFilePath": "C:\\Simple Polling App\\PollingApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MitaliGupta\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\MitaliGupta\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

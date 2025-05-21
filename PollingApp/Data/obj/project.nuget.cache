@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1At/JzZDsmo=",
+  "dgSpecHash": "ctYf3+dhu0M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MitaliGupta\\Desktop\\Fusion stack Training\\PollingApp\\Data\\Data.csproj",
+  "projectFilePath": "C:\\Simple Polling App\\PollingApp\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MitaliGupta\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\MitaliGupta\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

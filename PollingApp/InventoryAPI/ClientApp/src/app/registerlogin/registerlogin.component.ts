@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import { trigger, transition, style, animate, AnimationOptions } from '@angular/animations';
+import { trigger, transition, style, animate } from '@angular/animations';
+import { AnimationOptions } from 'ngx-lottie';
 
 
 @Component({
   selector: 'app-registerlogin',
   templateUrl: './registerlogin.component.html',
   styleUrls: ['./registerlogin.component.css'],
+   
    animations: [
     trigger('slideFadeIn', [
       transition(':enter', [
@@ -38,7 +40,12 @@ trigger('toggleFade', [
 export class RegisterloginComponent {
 
   showRegister: boolean = true;
-  
+
+  lottieOptions: AnimationOptions = {
+    path: 'assets/laptop.json', // ✅ Correct path inside /src/assets/
+    loop: true,
+    autoplay: true
+  };
     
 
   user = {
