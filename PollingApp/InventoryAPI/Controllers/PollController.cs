@@ -44,9 +44,7 @@ namespace InventoryAPI.Controllers
             public async Task<IActionResult> CreatePoll([FromBody] CreatePollDto createPollDto)
             {
 
-                //var username = User.FindFirstValue(ClaimTypes.Name);  // Assuming 'Name' claim stores the username
-
-                // Step 2: Find the user by username
+            
 
                 var username = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
@@ -116,9 +114,9 @@ namespace InventoryAPI.Controllers
                     });
                 }
 
-                // Normalize time: start of day to end of day
+                
                 var startDate = fromDate.Value.Date;
-                var endDate = toDate.Value.Date.AddDays(1).AddTicks(-1); // 23:59:59.9999999
+                var endDate = toDate.Value.Date.AddDays(1).AddTicks(-1); 
 
                 var polls = await _context.Polls
                     .Include(p => p.Options)
@@ -170,12 +168,12 @@ namespace InventoryAPI.Controllers
                 {
                     if (expired.Value)
                     {
-                        // Get expired polls: CreatedAt + 7 days <= now
+                   
                         pollsQuery = pollsQuery.Where(p => p.CreatedAt.AddDays(7) <= now);
                     }
                     else
                     {
-                        // Get not expired polls: CreatedAt + 7 days > now
+                    
                         pollsQuery = pollsQuery.Where(p => p.CreatedAt.AddDays(7) > now);
                     }
                 }

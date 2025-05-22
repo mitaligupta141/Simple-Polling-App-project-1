@@ -8,7 +8,7 @@ import { Component, OnInit} from '@angular/core';
 export class NavbarComponent implements OnInit {
    
 menuOpen: boolean = false;
-  loggedIn: boolean = false; // Declare at the class level
+  loggedIn: boolean = false;
 
   ngOnInit(): void {
     const token = localStorage.getItem('token');

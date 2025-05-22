@@ -1,73 +1,23 @@
-<!-- <app-navbar></app-navbar>
 
-<div style="width: 100vw;">
-
-  <div class="text-center mb-10">
-    <h1 style="margin-top: 50px;" class="mat-display-1 text-green-900">
-     🗳️ Vote Percentage of of All the Polls Options
-    </h1>
-  </div>
-
-
-  <div *ngIf="loading" class="text-center p-5">
- 
-    <p>Loading polls...</p>
-  </div>
-
-
-  <div *ngIf="errorMsg" class="text-center text-red-600 p-5">
-    {{ errorMsg }}
-  </div>
-
-
-  <div *ngIf="!loading && polls.length === 0" class="text-center p-5">
-    No polls found.
-  </div>
-
-
-  <div *ngFor="let poll of polls" class="max-w-4xl mx-auto mb-12">
-    <mat-card class="mat-elevation-z4 p-4">
-      <mat-card-header>
-        <mat-card-title class="text-xl font-bold">{{ poll.question }}</mat-card-title>
-        <mat-card-subtitle>
-          Created: {{ poll.createdAt | date:'medium' }} |
-          Expires: {{ poll.expirationDate | date:'medium' }}
-        </mat-card-subtitle>
-      </mat-card-header>
-
-      <mat-divider></mat-divider>
-
-      <mat-card-content class="mt-4">
-        <canvas baseChart
-                [data]="getChartData(poll)"
-                [options]="barChartOptions"
-                [type]="barChartType">
-        </canvas>
-      </mat-card-content>
-    </mat-card>
-  </div>
-</div>
-
-<app-footer></app-footer> -->
 
 
 
 <app-navbar></app-navbar>
 
 <div  @slideFadeIn  style="width: 100vw;">
-  <!-- Header -->
+
   <div class="text-center mb-10">
     <h1 style="margin-top: 50px;" class="mat-display-1 text-green-900">
       🗳️ Vote Percentage of All the Poll Options
     </h1>
   </div>
 
-  <!-- Loading -->
+
   <div *ngIf="loading" class="text-center p-5">Loading polls...</div>
   <div *ngIf="errorMsg" class="text-center text-red-600 p-5">{{ errorMsg }}</div>
   <div *ngIf="!loading && polls.length === 0" class="text-center p-5">No polls found.</div>
 
-  <!-- Charts -->
+
   <div *ngIf="polls.length > 0" >
     <!-- Bar Chart -->
     <highcharts-chart class="max-w-6xl mx-auto space-y-12 p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"

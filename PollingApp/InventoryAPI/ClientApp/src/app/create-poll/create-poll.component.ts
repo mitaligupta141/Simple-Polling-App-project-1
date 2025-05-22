@@ -40,7 +40,7 @@ trigger('toggleFade', [
 export class CreatePollComponent {
   poll = {
     question: '',
-    options: ['', ''], // Start with 2 options
+    options: ['', ''], 
   };
 
    error: string = '';

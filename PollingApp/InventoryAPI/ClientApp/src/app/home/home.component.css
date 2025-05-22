@@ -82,10 +82,10 @@
 
 
 @media (max-width: 576px) {
-  /* Styles for screens smaller than 768px */
 
-.about{
-  margin-top: 200px;
+
+.head , .sub-head{
+  text-align: center;
 }
 
 

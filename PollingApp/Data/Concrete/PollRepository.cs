@@ -83,7 +83,7 @@ namespace Data.Concrete
                     ? query.OrderByDescending(p => p.Votes.Count)
                     : query.OrderBy(p => p.Votes.Count),
 
-                _ => query.OrderBy(p => p.CreatedAt) // default fallback
+                _ => query.OrderBy(p => p.CreatedAt) 
             };
 
             return await query.ToListAsync();
@@ -103,13 +103,12 @@ namespace Data.Concrete
 
             search = search.ToLower();
 
-            // Get all polls with related data from DB first
             var polls = await _context.Polls
                 .Include(p => p.Options)
                 .Include(p => p.Votes)
                 .ToListAsync();
 
-            // Filter in memory
+      
             var filteredPolls = polls.Where(p =>
                 p.Question.ToLower().Contains(search) ||
                 p.CreatedAt.ToString("yyyy-MM-dd").ToLower().Contains(search) ||

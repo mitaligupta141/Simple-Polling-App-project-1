@@ -43,7 +43,7 @@ namespace Data.Concrete
                 {
                     Question = v.Poll.Question,
                     OptionText = v.Option.Text,
-                    VotedAt = DateTime.UtcNow // Or use a real VotedAt field if available
+                    VotedAt = DateTime.UtcNow 
                 })
                 .ToListAsync();
         }

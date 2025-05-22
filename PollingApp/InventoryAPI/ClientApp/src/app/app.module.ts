@@ -48,7 +48,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatMenuModule } from '@angular/material/menu';
 
 
-
+import { NgImageSliderModule } from 'ng-image-slider';
 
 
 
@@ -88,7 +88,7 @@ export function playerFactory() {
   
   ],
   imports: [
-   LottieModule.forRoot({ player: playerFactory }) ,// 👈 Add this  
+   LottieModule.forRoot({ player: playerFactory }) ,
      BrowserAnimationsModule,
     BrowserModule,
     NgbModule,
@@ -120,7 +120,8 @@ export function playerFactory() {
   HighchartsChartModule,
   MatSortModule,
   MatMenuModule,
-  NgbModule
+  NgbModule,
+  NgImageSliderModule
 
 
   ],

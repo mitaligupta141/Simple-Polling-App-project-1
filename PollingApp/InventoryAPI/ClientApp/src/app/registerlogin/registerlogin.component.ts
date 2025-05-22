@@ -42,7 +42,7 @@ export class RegisterloginComponent {
   showRegister: boolean = true;
 
   lottieOptions: AnimationOptions = {
-    path: 'assets/laptop.json', // ✅ Correct path inside /src/assets/
+    path: 'assets/laptop.json', 
     loop: true,
     autoplay: true
   };
@@ -56,9 +56,7 @@ export class RegisterloginComponent {
 
   register() {
     console.log('User Registration Data:', this.user);
-    // TODO: Send to API
-    
-     // This will control which component is shown
+
     
   }
 

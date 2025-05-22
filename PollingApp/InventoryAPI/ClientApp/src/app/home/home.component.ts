@@ -36,14 +36,29 @@ trigger('toggleFade', [
 })
 export class HomeComponent {
 
-   images = [
-    'https://prod.smassets.net/assets/content/sm/SEO-online-polls-hero-557x400.webp" alt="User',
-    'https://prod.smassets.net/assets/content/sm/SEO-online-polls-hero-557x400.webp" alt="User',
-    'https://prod.smassets.net/assets/content/sm/SEO-online-polls-hero-557x400.webp" alt="User',
-  ]; 
+   imageObject = [
+  {
+    image: 'https://prod.smassets.net/assets/content/sm/SEO-online-polls-hero-557x400.webp',
+    thumbImage: 'https://prod.smassets.net/assets/content/sm/SEO-online-polls-hero-557x400.webp',
+    alt: 'Poll Slide 1',
+    title: 'Create and Vote Instantly'
+  },
+  {
+    image: '../../assets/poll.jpg',
+    thumbImage: '../../assets/poll.jpg',
+    alt: 'Poll Slide 2',
+    title: 'Real-Time Insights'
+  },
+  {
+     image: '../../assets/man.jpg',
+    thumbImage: '../../assets/man.jpg',
+    alt: 'Poll Slide 3',
+    title: 'Easy to Use'
+  }
+];
 
    lottieOptions: AnimationOptions = {
-      path: 'assets/vote.json', // ✅ Correct path inside /src/assets/
+      path: 'assets/vote.json',
       loop: true,
       autoplay: true
     };

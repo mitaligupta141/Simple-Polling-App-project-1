@@ -22,6 +22,14 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+
+using Services.Contract.PollingApp.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Services.Concrete
 {
@@ -29,14 +37,6 @@ namespace Services.Concrete
 
 
 
-    using AutoMapper;
-    using Microsoft.EntityFrameworkCore;
-
-    using Services.Contract.PollingApp.Interfaces;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
 
     namespace PollingApp.Services
     {
@@ -58,18 +58,18 @@ namespace Services.Concrete
 
             public async Task<ApiResponse<PollDto>> CreatePollAsync(CreatePollDto createPollDto, string userId)
             {
-                // 1. Validate options count
+              
                 if (createPollDto.Options == null || createPollDto.Options.Count < 2 || createPollDto.Options.Count > 10)
                 {
                     return new ApiResponse<PollDto>("Poll must have between 2 and 10 options.");
                 }
 
-                // 2. Trim inputs
+            
                 userId = userId.Trim();
                 var question = createPollDto.Question.Trim();
                 var newOptions = createPollDto.Options.Select(o => o.Trim()).OrderBy(x => x).ToList();
 
-                // 3. Check for duplicate polls by the same user
+             
                 var existingPolls = await _pollRepository.GetPollsByQuestionAndUserAsync(question, userId);
 
                 foreach (var existingPoll in existingPolls)
@@ -82,7 +82,7 @@ namespace Services.Concrete
                     }
                 }
 
-                // 4. Create and save new poll
+           
                 var poll = new Poll
                 {
                     Question = question,

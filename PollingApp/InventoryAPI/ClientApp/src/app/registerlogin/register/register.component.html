@@ -4,7 +4,7 @@
   #signupForm="ngForm" 
   novalidate
 >
-  <!-- Username -->
+ 
   <input 
     type="text" 
     name="username" 
@@ -18,7 +18,7 @@
     Username is required.
   </div>
 
-  <!-- Email -->
+  
   <input 
     type="email" 
     name="email" 
@@ -34,7 +34,7 @@
     <div *ngIf="email.errors?.['email']">Invalid email format.</div>
   </div>
 
-  <!-- Password -->
+
   <input 
     type="password" 
     name="password" 
@@ -54,7 +54,7 @@
     </div>
   </div>
 
-  <!-- Confirm Password -->
+ 
   <input 
     type="password" 
     name="confirmPassword" 
@@ -68,7 +68,7 @@
     Confirm Password is required.
   </div>
 
-  <!-- Submit Button -->
+ 
   <button 
     type="submit" 
     class="w-full bg-black text-white font-bold py-3 rounded hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed" 
@@ -78,7 +78,7 @@
   </button>
 </form>
 
-<!-- Already have account -->
+
 <p class="text-xl font-bold text-gray-600 mt-5 text-center">
   Already Have an Account? <a routerLink="/registerlogin" class="text-green-600 hover:underline">SignIn</a>
 </p>

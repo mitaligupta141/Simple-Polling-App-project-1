@@ -23,19 +23,19 @@ const routes: Routes = [
     component: LoginComponent,
     data: { animation: 'LoginPage' }
   },
-  { path: 'registerlogin', component: RegisterloginComponent }, // Default route (Home page)
+  { path: 'registerlogin', component: RegisterloginComponent },
   // { path: 'dashboard', component: DashboardComponent },
   { path: 'logout', component: LogoutComponent }, 
   // { path: 'login', component: LoginComponent },
-  // { path: 'register', component: RegisterComponent },// Dashboard route
-  // { path: 'createpoll', component: CreatePollComponent },// Dashboard route
-   // { path: 'showvote', component: ShowVoteComponent },// Dashboard route
-     { path: '', component: HomeComponent },// Dashboard route
+  // { path: 'register', component: RegisterComponent },
+  // { path: 'createpoll', component: CreatePollComponent },
+   // { path: 'showvote', component: ShowVoteComponent },
+     { path: '', component: HomeComponent },
 
      {
     path: 'createpoll',
     component: CreatePollComponent,
-    canActivate: [authGuard], // Use functional guard here
+    canActivate: [authGuard], 
   },
 
   {
@@ -51,12 +51,12 @@ const routes: Routes = [
   },
 
 
-          { path: 'poll-results/:id', component: VotePercentComponent },// Dashboard route
-  // Add more routes as needed
+          { path: 'poll-results/:id', component: VotePercentComponent },
+  
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)], // Register the routes in the RouterModule
-  exports: [RouterModule] // Export RouterModule to use in the app
+  imports: [RouterModule.forRoot(routes)], 
+  exports: [RouterModule] 
 })
 export class AppRoutingModule { }
